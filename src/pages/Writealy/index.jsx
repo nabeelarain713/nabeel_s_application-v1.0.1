@@ -1546,12 +1546,13 @@ const WritealyPage = () => {
                     ></Input>
                   </div>
                   <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between mt-[70px] w-full">
-                    <Text
-                      className="bg-white-A700 border border-black-900 border-solid h-20 justify-center pb-[30px] pt-[25px] sm:px-5 px-[35px] rounded-[10px] text-gray-600_01 text-xl w-[476px]"
-                      size="txtInterBold20"
-                    >
-                      Address
-                    </Text>
+                    <Input
+                      name="groupFour"
+                      placeholder="Address"
+                      className="font-bold leading-[normal] p-0 placeholder:text-gray-600_01 text-left text-xl w-full"
+                      wrapClassName="border border-black-900 border-solid md:flex-1 md:w-full"
+                      type="text"
+                    ></Input>
                     <Input
                       name="groupFour"
                       placeholder="Email"
@@ -1565,12 +1566,7 @@ const WritealyPage = () => {
                     name="groupFive"
                     placeholder="Description"
                   ></TextArea>
-                  <Text
-                    className="bg-green-900 h-[69px] justify-center md:ml-[0] ml-[939px] mt-11 pb-[25px] pt-[18px] sm:px-5 px-[35px] rounded-[10px] text-white-A700 text-xl w-[298px]"
-                    size="txtInterBold20WhiteA700"
-                  >
-                    Submit
-                  </Text>
+                  <button className="mx-10 btn btn-success btn-lg">Submit</button>
                 </div>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
-const Writealy = React.lazy(() => import("pages/Writealy"));
+// const Writealy = React.lazy(() => import("pages/Writealy"));
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<>Loading...</>}>
@@ -10,7 +10,7 @@ const ProjectRoutes = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/writealy" element={<Writealy />} />
+          {/* <Route path="/writealy" element={<Writealy />} /> */}
         </Routes>
       </Router>
     </React.Suspense>
